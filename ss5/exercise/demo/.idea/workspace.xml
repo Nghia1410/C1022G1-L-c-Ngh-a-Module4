@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9c176bf7-8e76-4d1d-b113-4110488643fe" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../bai1/src/main/java/com/codegym/GreetingController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai1/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai1/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai1/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.gradle/6.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.gradle/6.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.gradle/6.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/build/classes/java/main/com/controller/ChangeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/build/classes/java/main/com/service/IChangeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/build/classes/java/main/com/service/impl/ChangeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/build/libs/ex_1-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/src/main/java/com/controller/ChangeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/src/main/java/com/service/IChangeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/src/main/java/com/service/impl/ChangeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai1/ex_1/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.gradle/6.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.gradle/6.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.gradle/6.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/build/classes/java/main/com/controller/DictionaryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/build/classes/java/main/com/service/IDictionaryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/build/classes/java/main/com/service/impl/DictionaryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/build/libs/bai_2-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/src/main/java/com/controller/DictionaryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/src/main/java/com/service/IDictionaryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/src/main/java/com/service/impl/DictionaryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../exercise/bai2/ex_2/bai_2/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/exercise/exercise_2/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/exercise/exercise_2/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/exercise/exercise_2/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/exercise/exercise_2/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/exercise/exercise_2/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/exercise/exercise_2/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/exercise/exercise_2/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/exercise/exercise_2/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/exercise/exercise_2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/exercise/exercise_2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/exercise/exercise_2/build/libs/exercise_2-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/exercise/exercise_2/build/libs/exercise_2-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/exercise/exercise_2/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/exercise/exercise_2/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/practice/thuc_hanh1/src/main/java/com/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/practice/thuc_hanh1/src/main/java/com/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/practice/thuc_hanh1/src/main/webapp/WEB-INF/configs/spring-config-mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/practice/thuc_hanh1/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/practice/thuc_hanh1/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/practice/thuc_hanh1/src/main/webapp/WEB-INF/views/success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/practice/thuc_hanh1/src/main/webapp/WEB-INF/views/success.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss3/exercise/exercise1/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss3/exercise/exercise1/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../test/src/main/java/com/example/AppConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../test/src/main/java/com/example/AppInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../test/src/main/java/com/example/controller/GreetingController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../test/src/main/webapp/WEB-INF/views/greeting.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="demo" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2MUmLqLsY2TYhZuSw5Fstw1AZFZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/DU LIEU CU/O D/codegym/C1022G1-LeDucNghiaModule4/C1022G1-L-c-Ngh-a-Module4/ss5/exercise/demo/src/main/java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\DU LIEU CU\O D\codegym\C1022G1-LeDucNghiaModule4\C1022G1-L-c-Ngh-a-Module4\ss5\exercise\demo\src\main\java" />
+      <recent name="D:\DU LIEU CU\O D\codegym\C1022G1-LeDucNghiaModule4\C1022G1-L-c-Ngh-a-Module4\ss5\exercise\demo\src\main\resources" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9c176bf7-8e76-4d1d-b113-4110488643fe" name="Changes" comment="" />
+      <created>1677830483605</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677830483605</updated>
+      <workItem from="1677830484774" duration="3220000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
