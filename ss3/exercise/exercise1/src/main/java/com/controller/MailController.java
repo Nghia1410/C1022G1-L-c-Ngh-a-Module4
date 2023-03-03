@@ -26,7 +26,7 @@ public class MailController {
         return new String[]{"5", "10", "15", "25", "50", "100"};
     }
 
-    @GetMapping("list")
+    @GetMapping("")
     public String showList(Model model) {
         model.addAttribute("listSetting", mailService.findAll());
         return "list";
@@ -39,9 +39,10 @@ public class MailController {
         return "edit";
     }
 
-    @PostMapping("/newUpdate")
-    public String save(@ModelAttribute("setting") Mail mail, RedirectAttributes redirectAttributes) {
-        mailService.update(mail);
+    @PostMapping("edit/save")
+    public String save(@ModelAttribute("mail") Mail mail, RedirectAttributes redirectAttributes) {
+        mailService.confirm(mail);
+        redirectAttributes.addFlashAttribute("mess", "edit successful");
         return "redirect:list";
     }
 }

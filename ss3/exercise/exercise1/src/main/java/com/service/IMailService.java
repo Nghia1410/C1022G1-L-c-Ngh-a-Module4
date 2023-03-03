@@ -6,6 +6,10 @@ import java.util.List;
 
 public interface IMailService {
     List<Mail> findAll();
-    void  update(Mail mail);
+
+    void update(Mail mail);
+
     Mail findById(int id);
+
+    void confirm(Mail mail);
 }
