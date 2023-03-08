@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @RequestMapping("/music")
 @Controller
@@ -34,13 +35,15 @@ public class MusicController {
     }
 
     @PostMapping("create")
-    public String create(@Validated @ModelAttribute MusicDTO musicDTO, BindingResult bindingResult) {
+    public String create(@Validated @ModelAttribute() MusicDTO musicDTO, BindingResult bindingResult, RedirectAttributes redirectAttributes, Model model) {
         if (bindingResult.hasErrors()) {
+            model.addAttribute("musicDTO", musicDTO);
             return "/create";
         }
         Music music = new Music();
         BeanUtils.copyProperties(musicDTO, music);
         iMusicService.create(music);
+        redirectAttributes.addFlashAttribute("mess", "thêm mới thành công");
         return "redirect:/music";
     }
 }

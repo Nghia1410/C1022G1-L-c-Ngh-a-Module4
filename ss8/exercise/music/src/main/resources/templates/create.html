@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
 <h2>Thêm bài hát</h2>
 <form action="/music/create" method="post" th:object="${musicDTO}">
-  <div class="form-group">
-    <label >Tên bài hát</label>
-    <input type="text" class="form-control" th:field="*{name}" placeholder="">
-    <div th:if="${#fields.hasErrors('name')}" th:text="*{name}"></div>
-  </div>
-  <div class="form-group">
-    <label >Ca sĩ</label>
-    <input type="text"
-           class="form-control" th:field="*{singer}" aria-describedby="helpId" placeholder="">
-    <div th:if="${#fields.hasErrors('singer')}" th:text="*{singer}"></div>
-  </div>
-  <div class="form-group">
-    <label >Thể loại</label>
-    <input type="text"
-           class="form-control" th:field="*{type}" aria-describedby="helpId" placeholder="">
-    <div th:if="${#fields.hasErrors('type')}" th:text="*{type}"></div>
-  </div>
-  <div>
-    <input type="submit" class="btn btn-dark" value="save">
-  </div>
+    <tr>
+        <td><p> Tên bài hát:</p></td>
+        <td><input type="text" placeholder="tên bài hát" th:field="*{name}"></td>
+        <td><p th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></p></td>
+    </tr>
+    <tr>
+        <td><p> Tên ca sĩ:</p></td>
+        <td><input type="text" placeholder="tên ca sĩ" th:field="*{singer}"></td>
+        <td><p th:if="${#fields.hasErrors('singer')}" th:errors="*{singer}"></p></td>
+    </tr>
+
+    <tr>
+        <td><p> Thể loại:</p></td>
+        <td><input type="text" placeholder="tên thể loại" th:field="*{type}"></td>
+        <td><p th:if="${#fields.hasErrors('type')}" th:errors="*{type}"></p></td>
+    </tr>
+    <tr>
+        <td>
+            <input type="submit" class="btn btn-dark" value="save">
+        </td>
+    </tr>
 </form>
 </body>
 </html>

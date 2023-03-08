@@ -3,10 +3,19 @@ package com.example.music.dto;
 import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
-public class MusicDTO implements Validator {
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+
+public class MusicDTO {
     private int id;
+    @NotBlank(message = "không được để trống")
+    @Size(min = 5, max = 15, message = "tên bài hát phải dài ít nhất 5 và nhiều nhất là 15 ký tự ")
     private String name;
+    @NotBlank(message = "không được để trống")
+    @Size(min = 5, max = 15, message = "tên ca sĩ phải dài ít nhất 5 và nhiều nhất là 15 ký tự ")
     private String singer;
+    @NotBlank(message = "không được để trống")
+    @Size(min = 5, max = 15, message = "tên thể loại phải dài ít nhất 5 và nhiều nhất là 15 ký tự ")
     private String type;
 
     public MusicDTO() {
@@ -42,15 +51,5 @@ public class MusicDTO implements Validator {
 
     public void setType(String type) {
         this.type = type;
-    }
-
-    @Override
-    public boolean supports(Class<?> clazz) {
-        return false;
-    }
-
-    @Override
-    public void validate(Object target, Errors errors) {
-
     }
 }
