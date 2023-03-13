@@ -3,15 +3,13 @@ package com.example.shopping_cart.controller;
 import com.example.shopping_cart.model.Product;
 import com.example.shopping_cart.service.IProductService;
 import com.example.shopping_cart.util.CartDto;
+import com.example.shopping_cart.util.ExceptionProduct;
 import com.example.shopping_cart.util.ProductDto;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
@@ -49,13 +47,13 @@ public class ProductController {
         return "cartShop";
     }
 
-//    @PostMapping ("/buy/{id}")
-//    public String deleteCart(@PathVariable("id") int id, @ModelAttribute("cart") CartDto cart, Model model) throws ExceptionProduct {
-//        Optional<Product> product = iProductService.findById(id);
-//        ProductDto productDto = new ProductDto();
-//        BeanUtils.copyProperties(product, productDto);
-//        cart.removeProduct(productDto);
-//        model.addAttribute("listProduct", cart.getProductMap());
-//        return "cartShop";
-//    }
+    @PostMapping("/buy/{id}")
+    public String deleteCart(@PathVariable("id") int id, @ModelAttribute("cart") CartDto cart, Model model) throws ExceptionProduct {
+        Optional<Product> product = iProductService.findById(id);
+        ProductDto productDto = new ProductDto();
+        BeanUtils.copyProperties(product, productDto);
+        cart.removeProduct(productDto);
+        model.addAttribute("listProduct", cart.getProductMap());
+        return "cartShop";
+    }
 }

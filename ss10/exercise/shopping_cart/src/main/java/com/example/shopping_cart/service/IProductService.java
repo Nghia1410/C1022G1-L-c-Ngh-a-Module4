@@ -9,4 +9,7 @@ public interface IProductService {
     List<Product> findAll();
 
     Optional<Product> findById(int id);
+
+    Product findByIdProDuct(int id);
+
 }
