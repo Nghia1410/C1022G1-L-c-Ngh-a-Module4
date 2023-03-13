@@ -4,7 +4,6 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "book")
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -12,7 +11,8 @@ public class Book {
     private String title;
     private String content;
     private int quantity;
-    @OneToMany(mappedBy = "book")
+    @OneToMany
+    @JoinColumn(name = "code_book_id",referencedColumnName = "id")
     private List<CodeBook> codeBookList;
 
     public List<CodeBook> getCodeBookList() {

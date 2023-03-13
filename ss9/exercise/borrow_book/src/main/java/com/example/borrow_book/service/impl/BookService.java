@@ -1,9 +1,10 @@
-package com.example.borrow_book.service;
+package com.example.borrow_book.service.impl;
 
 import com.example.borrow_book.model.Book;
 import com.example.borrow_book.model.CodeBook;
 import com.example.borrow_book.repository.IBookRepository;
 import com.example.borrow_book.repository.ICodeBookRepository;
+import com.example.borrow_book.service.IBookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
