@@ -12,12 +12,12 @@
             <tr>
                 <td><p>First Name:</p></td>
                 <td><input type="text" placeholder="nhập họ" th:field="*{firstName}"></td>
-                <td><p th:if="${#fields.hasErrors('FirstName')}" th:errors="*{firstName}"></p></td>
+                <td><p th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></p></td>
             </tr>
             <tr>
                 <td><p>Last Name:</p></td>
                 <td><input type="text" placeholder="nhập tên" th:field="*{lastName}"></td>
-                <td><p th:if="${#fields.hasErrors('LastName')}" th:errors="*{lastName}"></p></td>
+                <td><p th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></p></td>
             </tr>
             <tr>
                 <td><p>PhoneNumber :</p></td>

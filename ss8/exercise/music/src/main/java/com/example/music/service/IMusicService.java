@@ -8,4 +8,8 @@ public interface IMusicService {
     List<Music> findAll();
 
     void create(Music music);
+
+    void edit(Music music);
+
+    Music findById(int id);
 }

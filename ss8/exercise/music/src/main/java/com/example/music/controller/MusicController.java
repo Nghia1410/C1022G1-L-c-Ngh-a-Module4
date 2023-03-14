@@ -10,10 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @RequestMapping("/music")
@@ -44,6 +41,25 @@ public class MusicController {
         BeanUtils.copyProperties(musicDTO, music);
         iMusicService.create(music);
         redirectAttributes.addFlashAttribute("mess", "thêm mới thành công");
+        return "redirect:/music";
+    }
+
+    @GetMapping("edit-form")
+    public String editForm(Model model, @RequestParam(required = false) Integer id) {
+        model.addAttribute("musicDTO", iMusicService.findById(id));
+        return "/edit";
+    }
+
+    @PostMapping("edit")
+    public String edit(@Validated @ModelAttribute() MusicDTO musicDTO, BindingResult bindingResult, RedirectAttributes redirectAttributes, Model model) {
+        if (bindingResult.hasErrors()) {
+            model.addAttribute("musicDTO", musicDTO);
+            return "/edit";
+        }
+        Music music = new Music();
+        BeanUtils.copyProperties(musicDTO, music);
+        iMusicService.edit(music);
+        redirectAttributes.addFlashAttribute("mess", "chỉnh sửa bài hát thành công");
         return "redirect:/music";
     }
 }

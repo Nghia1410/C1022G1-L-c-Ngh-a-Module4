@@ -9,9 +9,9 @@ public class UserDto {
     private int id;
 
     @NotBlank(message = "không được để trống")
-    @Size(min = 5, max = 45,message = "Tên tối thiểu 5 kí tự và tối đa 45 kí tự.")
+    @Size(min = 2, max = 45,message = "Tên tối thiểu 2 kí tự và tối đa 45 kí tự.")
     private String firstName;
-    @Size(min = 5, max = 45,message = "Tên tối thiểu 5 kí tự và tối đa 45 kí tự.")
+    @Size(min = 3, max = 45,message = "Tên tối thiểu 3 kí tự và tối đa 45 kí tự.")
     private String lastName;
     @Pattern(regexp = "((09|03|07|08|05)+([0-9]{8}))", message = "Số điện thoại không đúng định dạng")
     private String phoneNumber;

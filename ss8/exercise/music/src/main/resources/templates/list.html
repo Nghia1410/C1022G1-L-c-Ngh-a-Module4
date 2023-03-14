@@ -18,6 +18,7 @@
         <th>Tên bài hát</th>
         <th>Ca sĩ</th>
         <th>Thể loại</th>
+        <th></th>
     </tr>
     </thead>
     <tbody>
@@ -26,6 +27,9 @@
         <td th:text="${music.name}"></td>
         <td th:text="${music.singer}"></td>
         <td th:text="${music.type}"></td>
+        <td>
+            <a th:href="@{music/edit-form?id=__${music.id}__}">Chỉnh sửa</a>
+        </td>
     </tr>
     </tbody>
 </table>
