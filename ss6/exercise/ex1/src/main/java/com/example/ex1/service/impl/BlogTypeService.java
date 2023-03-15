@@ -13,8 +13,17 @@ public class BlogTypeService implements IBlogTypeService {
     @Autowired
     private IBlogTypeRepository iBlogTypeRepository;
 
+
     @Override
-    public List<BlogType> findAll() {
-        return iBlogTypeRepository.findAll();
+    public List<BlogType> findByName(String name) {
+        if(name==null){
+            name="";
+        }
+        return iBlogTypeRepository.findByNameBlogTypeContaining(name);
+    }
+
+    @Override
+    public void save(BlogType blogType) {
+
     }
 }

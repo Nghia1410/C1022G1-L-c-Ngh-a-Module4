@@ -1,13 +1,17 @@
 package com.example.ex1.service;
 
 import com.example.ex1.model.Blog;
-
-import java.util.List;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 public interface IBlogService {
-    List<Blog> findAll(String tittle);
+    Page<Blog> findAll(String tittle, Pageable pageable);
+
     Blog findById(int id);
+
     void save(Blog blog);
+
     void edit(Blog blog);
+
     void delete(int id);
 }

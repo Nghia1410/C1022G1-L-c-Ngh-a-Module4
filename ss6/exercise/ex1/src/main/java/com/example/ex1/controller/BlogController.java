@@ -1,9 +1,12 @@
 package com.example.ex1.controller;
 
 import com.example.ex1.model.Blog;
+import com.example.ex1.model.BlogType;
 import com.example.ex1.service.IBlogService;
 import com.example.ex1.service.IBlogTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -16,49 +19,74 @@ public class BlogController {
     private IBlogTypeService iBlogTypeService;
     @Autowired
     private IBlogService iBlogService;
+
     @GetMapping("")
-    public String showList(Model model, @RequestParam(required = false) String tittle){
-        model.addAttribute("tittle",tittle);
-        model.addAttribute("blogList",iBlogService.findAll(tittle));
+    public String showList(Model model, @RequestParam(required = false) String tittle, @PageableDefault(size = 3) Pageable pageable) {
+        model.addAttribute("tittle", tittle);
+        model.addAttribute("blogList", iBlogService.findAll(tittle, pageable));
         return "/list";
     }
+
     @GetMapping("/create-form")
-    public String createBlog(Model model){
-        model.addAttribute("blogTypeList",iBlogTypeService.findAll());
-        model.addAttribute("blog",new Blog());
+    public String createBlog(Model model) {
+        model.addAttribute("blogTypeList", iBlogTypeService.findByName(null));
+        model.addAttribute("blog", new Blog());
         return "/create";
     }
+
     @PostMapping("/create")
-    public String create(@ModelAttribute Blog blog, RedirectAttributes redirectAttributes){
-        redirectAttributes.addFlashAttribute("msg","successful new creation");
+    public String create(@ModelAttribute Blog blog, RedirectAttributes redirectAttributes) {
+        redirectAttributes.addFlashAttribute("msg", "successful new creation");
         iBlogService.save(blog);
         return "redirect:/blog";
     }
+
     @GetMapping("/edit-form")
-    public String editForm(Model model, @RequestParam(required = false) Integer id, RedirectAttributes redirectAttributes){
-        if(iBlogService.findById(id)!=null){
-            model.addAttribute("blogTypeList",iBlogTypeService.findAll());
+    public String editForm(Model model, @RequestParam(required = false) Integer id, RedirectAttributes redirectAttributes) {
+        if (iBlogService.findById(id) != null) {
+            model.addAttribute("blogTypeList", iBlogTypeService.findByName(null));
             model.addAttribute("blog", iBlogService.findById(id));
-        }else {
-            redirectAttributes.addFlashAttribute("msg","ID does not exist");
+        } else {
+            redirectAttributes.addFlashAttribute("msg", "ID does not exist");
             return "redirect:/blog";
         }
         return "/edit";
     }
+
     @PostMapping("edit")
-    public String edit(@ModelAttribute Blog blog,RedirectAttributes redirectAttributes){
-        redirectAttributes.addFlashAttribute("msg","Successful upgrade");
+    public String edit(@ModelAttribute Blog blog, RedirectAttributes redirectAttributes) {
+        redirectAttributes.addFlashAttribute("msg", "Successful upgrade");
         iBlogService.edit(blog);
         return "redirect:/blog";
     }
+
     @GetMapping("delete")
-    public String delete(@RequestParam(required = false) Integer id, RedirectAttributes redirectAttributes){
-        if(iBlogService.findById(id)!=null){
-            redirectAttributes.addFlashAttribute("msg","Successful delete");
+    public String delete(@RequestParam(required = false) Integer id, RedirectAttributes redirectAttributes) {
+        if (iBlogService.findById(id) != null) {
+            redirectAttributes.addFlashAttribute("msg", "Successful delete");
             iBlogService.delete(id);
-        }else {
-            redirectAttributes.addFlashAttribute("msg","ID does not exist");
+        } else {
+            redirectAttributes.addFlashAttribute("msg", "ID does not exist");
         }
         return "redirect:/blog";
+    }
+
+    @GetMapping("/category")
+    public String category(@RequestParam(required = false) String name, Model model) {
+        model.addAttribute("name", name);
+        model.addAttribute("category", iBlogTypeService.findByName(name));
+        return "/category";
+    }
+
+    @GetMapping("/create-category-form")
+    public String createCategoryForm(Model model) {
+        model.addAttribute("category", new BlogType());
+        return "create-category";
+    }
+
+    @PostMapping("/create-category")
+    public String createCategory(@ModelAttribute BlogType blogType) {
+        iBlogTypeService.save(blogType);
+        return "redirect:/blog/category";
     }
 }
