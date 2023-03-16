@@ -11,15 +11,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
+@RequestMapping("/book")
 public class BookController {
-
     @Autowired
     private IBookService iBookService;
 
     @Autowired
     private ICodeBookService iCodeBookService;
 
-    @RequestMapping
+    @GetMapping("")
     public String showList(Model model) {
         model.addAttribute("listBook", iBookService.findAll());
         return "list_book";
